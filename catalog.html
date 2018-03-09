@@ -115,19 +115,15 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Сортировка:</legend>
-            <select class="filter-sort" name="sort-by">
-              <option class="filter-sort-item" value="popularity">по популярности</option>
-              <option class="filter-sort-item" value="price">сначала недорогие</option>
-              <option class="filter-sort-item" value="price-descendingly">сначала дорогие</option>
-              <option class="filter-sort-item" value="fat">по жирности</option>
-            </select>
-          </fieldset>
-          <fieldset>
-            <legend>Цена: 100 руб. - 500 руб.</legend>
-            <input type="range" min="1" max="700">
-          </fieldset>
+          <label for="filter-sort-by">Сортировка:</label>
+          <select class="filter-sort" name="sort-by" id="filter-sort-by">
+            <option class="filter-sort-item" value="popularity">по популярности</option>
+            <option class="filter-sort-item" value="price">сначала недорогие</option>
+            <option class="filter-sort-item" value="price-descendingly">сначала дорогие</option>
+            <option class="filter-sort-item" value="fat">по жирности</option>
+          </select>
+          <label for="filter-price">Цена: 100 руб. - 500 руб.</label>
+          <input type="range" name="price" min="0" max="700" id="filter-price">
           <fieldset>
             <legend>Жирность:</legend>
             <ul>
