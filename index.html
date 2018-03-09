@@ -24,15 +24,32 @@
           <li><a href="about.html">О Компании</a></li>
         </ul>
         <a class="search-link">Поиск</a>
-          <div class="search-form">
-            <!-- Здесь будет форма поиска -->
-          </div>
+          <section class="popup popup-search">
+            <form class="search-form" action="" method="post">
+              <label class="visually-hidden" for="search">Поиск</label>
+              <input class="search" id="search" type="text" name="search" placeholder="Что ищем?">
+            </form>
+          </section>
         <a class="login-link">Вход</a>
-          <div class="logn-form">
-            <!-- Здесь будет форма входа -->
-          </div>
+          <section class="popup popup-login">
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input class="user-login" id="user-login" type="email" name="login" placeholder="Электронная почта" required>
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="user-password" id="user-password" type="password" name="password" placeholder="Пароль" required>
+              </p>
+              <p class="login-password-info">
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </p>
+              <button class="button" type="submit">Войти</button>
+            </form>
+          </section>
         <a class="сart-link">Пусто</a>
-          <div class="cart-form">
+          <section class="popup popup-cart">
             <table>
               <tr>
                 <td>
@@ -73,7 +90,7 @@
               <b>Итого: 750 руб.</b>
               <a class="button" href="#">Оформить заказ</a>
             </p>
-          </div>
+          </section>
     </nav>
     <p class="order-phone">
       С 10 до 20, ежедневно<br>
@@ -208,11 +225,17 @@
         </article>
 
         <article class="features email">
-          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <h2 class="visually-hidden">Подписаться на рассылку</h2>
           <p>
             Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
           </p>
-          <!-- Здесь будет форма -->
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="email">Электронная почта</label>
+              <input class="email" id="email" type="email" name="email" placeholder="Электронная почта">
+            </p>
+            <button class="button" type="submit">Отправить</button>
+          </form>
         </article>
       </section>
     </main>
@@ -237,7 +260,7 @@
       </section>
     </section>
 
-    <footer>
+    <footer class="main-footer">
       <ul class="footer-social">
         <li><a class="social-button twitter" href="#">Твиттер</a></li>
         <li><a class="social-button insta" href="#">Инстаграм</a></li>
