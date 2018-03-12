@@ -24,14 +24,16 @@
           <li><a href="about.html">О Компании</a></li>
         </ul>
         <a class="search-link">Поиск</a>
-          <section class="popup popup-search">
+          <section class="modal modal-search">
+            <h2 class="visually-hidden">Форма поиска</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="search">Поиск</label>
               <input class="search" id="search" type="text" name="search" placeholder="Что ищем?">
             </form>
           </section>
         <a class="login-link">Вход</a>
-          <section class="popup popup-login">
+          <section class="modal modal-login">
+            <h2 class="visually-hidden">Форма входа</h2>
             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
               <p>
                 <label class="visually-hidden" for="user-login">Логин</label>
@@ -49,14 +51,15 @@
             </form>
           </section>
         <a class="сart-link">Пусто</a>
-          <section class="popup popup-cart">
-            <table>
+          <section class="modal modal-cart">
+            <h2 class="visually-hidden">Корзина</h2>
+            <table class="cart">
               <tr>
                 <td>
-                  <button class="product-remove">Удалить товар</button>
+                  <a class="product-remove invisible-text" href="#">Удалить товар</a>
                 </td>
                 <td>
-                  <img src="img/product-icecream1_small.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  <img src="img/product-icecream1_small.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                 </td>
                 <td>
                   Пломбир с апельсиновым джемом
@@ -70,10 +73,10 @@
               </tr>
               <tr>
                 <td>
-                  <button class="product-remove">Удалить товар</button>
+                  <a class="product-remove invisible-text" href="#">Удалить товар</a>
                 </td>
                 <td>
-                  <img src="img/product-icecream3_small.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <img src="img/product-icecream3_small.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
                 </td>
                 <td>
                   Клубничный пломбир с присыпкой из белого шоколада
@@ -112,13 +115,13 @@
       </section>
       <ul class="slider-navigation">
         <li>
-          <button class="slider-button slider-button-active">#</button>
+          <button class="slider-button slider-button-active invisible-text">Слайд 1</button>
         </li>
         <li>
-          <button class="slider-button">#</button>
+          <button class="slider-button invisible-text">Слайд 2</button>
         </li>
         <li>
-          <button class="slider-button">#</button>
+          <button class="slider-button invisible-text">Слайд 3</button>
         </li>
       </ul>
     </section>
@@ -151,48 +154,40 @@
             <a href="catalog-item.html">
               <img src="img/product-icecream1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               310&#8381;<span>/кг</span>
-            </a>
-            <h3 class="catalog-item-title">
-              <a href="catalog-item.html">
+              <h3 class="catalog-item-title">
                 Сливочное с апельсиновым джемом и цитрусовой стружкой
-              </a>
-            </h3>
+              </h3>
+            </a>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item hit">
             <a href="catalog-item.html">
               <img src="img/product-icecream2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
               380&#8381;<span>/кг</span>
-            </a>
-            <h3 class="catalog-item-title">
-              <a href="catalog-item.html">
+              <h3 class="catalog-item-title">
                 Сливочно-кофейное с кусочками шоколада
-              </a>
-            </h3>
+              </h3>
+            </a>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item hit">
             <a href="catalog-item.html">
               <img src="img/product-icecream3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
               355&#8381;<span>/кг</span>
-            </a>
-            <h3 class="catalog-item-title">
-              <a href="catalog-item.html">
+              <h3 class="catalog-item-title">
                 Сливочно-клубничное с присыпкой из белого шоколада
-              </a>
-            </h3>
+              </h3>
+            </a>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
           <li class="catalog-item hit">
             <a href="catalog-item.html">
               <img src="img/product-icecream4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
               415&#8381;<span>/кг</span>
-            </a>
-            <h3 class="catalog-item-title">
-              <a href="catalog-item.html">
+              <h3 class="catalog-item-title">
                 Сливочное крем-брюле с карамельной подливкой
-              </a>
-            </h3>
+              </h3>
+            </a>
             <a class="button" href="#">Быстрый просмотр</a>
           </li>
         </ul>
@@ -262,10 +257,10 @@
 
     <footer class="main-footer">
       <ul class="footer-social">
-        <li><a class="social-button twitter" href="#">Твиттер</a></li>
-        <li><a class="social-button insta" href="#">Инстаграм</a></li>
-        <li><a class="social-button fb" href="#">Фейсбук</a></li>
-        <li><a class="social-button vk" href="#">Вконтакте</a></li>
+        <li><a class="social-button twitter invisible-text" href="#">Твиттер</a></li>
+        <li><a class="social-button insta invisible-text" href="#">Инстаграм</a></li>
+        <li><a class="social-button fb invisible-text" href="#">Фейсбук</a></li>
+        <li><a class="social-button vk invisible-text" href="#">Вконтакте</a></li>
       </ul>
       <ul class="footer-business-navigation">
         <li class="business-navigation-first"><a href="#">Для поставщиков</a></li>
@@ -281,8 +276,22 @@
     <section class="modal modal-contact">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <p>Мы обязательно вам ответим!</p>
-      <!-- Здесь будет форма -->
-      <button class="modal-close">Закрыть</button>
+        <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="contact-name">Имя</label>
+            <input class="contact-name" id="contact-name" type="text" name="contact-name" placeholder="Как вас зовут?" required>
+          </p>
+          <p>
+            <label class="visually-hidden" for="contact-email">Электронная почта</label>
+            <input class="contact-email" id="contact-email" type="email" name="contact-email" placeholder="Ваша почта для ответа?" required>
+          </p>
+          <p>
+            <label class="visually-hidden" for="user-comment">Комментарий</label>
+            <input class="user-comment" id="user-comment" type="text" name="user-comment" placeholder="Напишите что-нибудь..." required>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      <button class="modal-close invisible-text">Закрыть</button>
     </section>
 
   </body>
